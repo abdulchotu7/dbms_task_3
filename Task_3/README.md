@@ -95,6 +95,8 @@ ORDER BY
     ai.account_id, i.type;
 ```
 This view extracts the best item quality for each user and item type.
+![Query Output](images/v1.png)
+
 
 ### **Create View `v2`**
 ```sql
@@ -110,6 +112,8 @@ JOIN
     items i ON ai.item_id = i.id;
 ```
 This view retrieves item names along with their types and quality.
+![Query Output](images/v2.png)
+
 
 ### **Final Query to Get Advised Items**
 ```sql
@@ -148,5 +152,4 @@ This output provides:
 ---
 
 ## Conclusion
-This methodology ensures an efficient way to manage user inventories and recommend the best items based on quality in an MMORPG game. By utilizing **database normalization, foreign keys, and views**, the system remains scalable and optimized for future expansions.
-
+This methodology ensures an efficient way to manage user inventories and recommend the best items based on quality in an MMORPG game. 
